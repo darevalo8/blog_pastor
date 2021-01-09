@@ -1,0 +1,56 @@
+comandos pyhon y django
+
+
+/*COMANDO PARA CREAR UN ENTORNO*/
+
+python -m venv nombre_entorno
+
+/*Para activar un entorno hacemos lo siguiente
+
+	1) entrar a la carpeta del entorno
+	2) ir a la carpeta Scripts
+	3) escribir activate y dar enter
+*/
+
+/*INSTALAR LIBRERIAS DJANGO*/
+
+pip install Django==3.1.5
+
+//instalar conector con postgres
+
+pip install psycopg2
+
+// comando para ver mis librerias instaladas en mi entorno virtual
+
+pip freeze
+
+pip freeze > requirement.txt
+
+
+/////////////////////////////////////////////////////////////
+
+/*COMANDOS DE DJANGO*/
+
+// PARA CREAR UN PROYECTO USAMOS
+
+django-admin startproject nombre_del proyecto
+
+
+
+// comando para correr el servidor
+
+
+python manage.py runserver
+
+// comando para hacer migraciones
+python manage.py migrate
+
+// comando para acceder al administrador de django
+
+python manage.py createsuperuser
+
+
+// COMANDO PARA CREAR UNA APLICACION ES:
+NOTA: TENEMOS QUE ESTAR DENTRO DEL PROYECTO DE DJANGO Y CON EL ENTORNO ABIERTO
+
+python manage.py startapp nombre_app
